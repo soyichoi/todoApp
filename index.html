@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="../images/todo_favicon.png" type="image/x-icon">
+    <title>To do list</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1><a href="./todo.html">To Do</a></h1>
+            <div id="gnb">
+                <h2><a href="#"><img src="./images/search.png" alt="검색"></a></h2>
+                <h2><a href="#"><img src="./images/menu.png" alt="전체메뉴보기"></a></h2>
+            </div>
+        </div>
+        <div class="tab_menu">
+            <h2><a href="#all_con"></a>All(3)</h2>
+            <h2><a href="#"></a>Today(0)</h2>
+        </div>
+        <div class="tab_contents" id="all_con">
+            <div class="contents1">
+                <a href="#" class="date">12.31</a>
+                <a href="#">매일 책 15분 읽기</a>
+            </div>
+            <div class="contents2">
+                <a href="#" class="date">12.31</a>
+                <a href="#">치과 스케일링 받기</a>
+            </div>
+            <div class="contents3">
+                <a href="#" class="date">12.31</a>
+                <a href="#">새해 다이어리 구입하기</a>
+            </div>
+        </div>
+        <div id="write_wrap">
+            <p>add a new task</p>
+            <a href="#" id="confirm_btn"><img src="./images/enter.png" alt="등록하기"></a>
+        </div>
+        <a href="#" id="write_fab"><img src="./images/new_btn_disable.png" alt="할일등록하기"></a>
+        <!-- fab == floating action button -->
+    </div>
+    <hr>
+    <!-- 복습용 -->
+    <!-- <div id="wrap">
+        <div id="top">
+            <h1>To Do</h1>
+            <div id="gnbmenu">
+                <h2>검색</h2>
+                <h2>메뉴</h2>
+            </div>
+        </div>
+        <div class="tab_menu">
+            <h2>할일(3)</h2>
+            <h2>완료(0)</h2>
+        </div>
+        <div class="tab_container">
+            <div class="container1">
+                <p class="date">01.20</p>
+                <p>학원 가기</p>
+            </div>
+            <div class="container2">
+                <p class="date">01.20</p>
+                <p>밥먹기</p>
+            </div>
+            <div class="container3">
+                <p class="date">01.20</p>
+                <p>집에 가기</p>
+            </div>
+        </div>
+        <div id="todo">
+            <p>add a new task</p>
+            <p id="complete_btn">등록</p>
+        </div>
+        <h2 id="write_btn">할일등록</h2>
+    </div> -->
+</body>
+</html>
