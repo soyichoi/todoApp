@@ -1,0 +1,5 @@
+#wrap .tab_contents p {
+    line-height: 40px;
+    text-align: center;
+    color: #999;
+}

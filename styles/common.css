@@ -20,9 +20,7 @@ body {background-color: rgba(0,0,0,0.15);}
 #wrap header nav {
     float: right;
 }
-#wrap header nav a {
-    
-}
+#wrap header nav a {}
 #wrap header nav a img {}
 #wrap header nav .search {
     margin-right: 8px;
@@ -35,7 +33,7 @@ body {background-color: rgba(0,0,0,0.15);}
     border-bottom: 1px solid #ddd;
 }
 #wrap .tab_menu a {
-    line-height: 40px;/* 한줄의 글자를 중간으로 크기를 만들수있음 */
+    line-height: 40px;/* 한줄의 글자를 중간으로 오게 만들수있음 */
     font-size: 1.13rem;/* 18px */
     display: inline-block;
     color: #999;/* 1. 비활성화 디자인 */
@@ -60,10 +58,9 @@ body {background-color: rgba(0,0,0,0.15);}
 #wrap .tab_contents .contents:hover {border-bottom: 1px solid #000000;}
 #wrap .tab_contents .contents:hover a {
     background-color: #e7f0ff;
-    font-weight: 600;}
-#wrap .tab_contents .contents a:hover {
-    
+    font-weight: 600;
 }
+#wrap .tab_contents .contents a:hover {}
 #wrap .tab_contents .contents .date {
     width: 72px; text-align: center;
 }
