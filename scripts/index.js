@@ -30,20 +30,24 @@ confirmBtn.addEventListener('click',function(){
         writeForm.appendChild(errP);
     }
     // 할일을 적은 상태일 경우
-    if(writeContents.value != ''){
-        const allCon = document.querySelector('#all_con');
-        const li = document.createElement('li');
-        const dateA = document.createElement('a');
-        const a = document.createElement('a');
-        dateA.classList.add('date'); //클래스 넣어서 디자인 적용
-        dateA.textContent = '04.03';
-        dateA.href = '#';
-        li.appendChild(dateA);
-        a.innerHTML = writeContents.value;
-        li.appendChild(a);
-        li.classList.add('contents4');
-        li.classList.add('contents');
-        allCon.appendChild(li);
-        writeForm.style.display = 'none'; //글쓰기창 닫기
+    if(writeContents.value != ''){//textarea의 값이 빈 값이 아닌 경우 참
+        const allCon = document.querySelector('#all_con');//ol 선택(자식요소삽입위해)
+        const li = document.createElement('li');//생성위치(클릭이벤트안)
+        const dateA = document.createElement('a');//클릭할때마다 생성
+        const a = document.createElement('a');//클릭할때마다 생성<a></a>
+
+        dateA.classList.add('date');//기존css의 디자인통일을 위해서 같은이름등록
+        li.classList.add('contents4');//기존 클래스와 일치해서 디자인 목적
+        li.classList.add('contents');//기존 클래스와 일치해서 디자인 목적
+
+        dateA.textContent = '04.03';//오늘 날짜 대입(문자열)
+        dateA.href = '#';//a태그생성시 속성없이 기본생성<a>, href속성추가대입
+        a.innerHTML = writeContents.value;//create생성한게 아닌 기존태그값을 대/입
+
+        li.appendChild(dateA);//li부모안 마지막자식위치에 날짜A 삽입(먼저 시작하는 순서)
+        li.appendChild(a);//날짜 다음 순서로 삽입하는 create객체 삽입 
+        allCon.appendChild(li);//allcan > li > dateA + a
+
+        writeForm.style.display = 'none'; //등록한 후 글쓰기팝업창 숨김
     }
 })
